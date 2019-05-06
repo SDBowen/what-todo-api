@@ -9,6 +9,6 @@ class Item < ApplicationRecord
   private
 
   def set_completed
-    self.completed = false
+    self.completed ||= false
   end
 end
