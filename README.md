@@ -1,24 +1,29 @@
-# README
+# What Todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API for What Todo, a simple todo list application.
 
-Things you may want to cover:
+The React client for What Todo is in a [separate repository](https://github.com/SDBowen/what-todo-client)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Clone the repo
 
-* Configuration
+```
+git clone https://github.com/SDBowen/what-todo-api.git
+```
 
-* Database creation
+Install dependencies
 
-* Database initialization
+```
+bundle install
+```
 
-* How to run the test suite
+Start the app with a specified port
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails s -p 3001
+```
 
-* Deployment instructions
+## Built With
 
-* ...
+- [Rails](https://rubyonrails.org/) - Back-end framework
