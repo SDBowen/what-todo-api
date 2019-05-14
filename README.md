@@ -6,22 +6,30 @@ The React client for What Todo is in a [separate repository](https://github.com/
 
 ## Getting Started
 
+Get Docker CE: https://docs.docker.com/install/
+
 Clone the repo
 
 ```
 git clone https://github.com/SDBowen/what-todo-api.git
 ```
 
-Install dependencies
+Build the API
 
 ```
-bundle install
+docker-compose build
 ```
 
-Start the app with a specified port
+Seed the database
 
 ```
-rails s -p 3001
+docker-compose run api rake db:setup
+```
+
+Start the API
+
+```
+docker-compose up
 ```
 
 ## Built With
